@@ -1,0 +1,40 @@
+<?php
+$catalog = array();
+$catalog[101] ="Design Patterns";
+$catalog[201] ="Forest Gump";
+$catalog[301] ="Beethoven";
+$catalog[102] = "Clean Code";
+
+$pageTitle = "Full catalog";
+$section = null;
+
+if(isset($_GET["cat"])){
+  if($_GET["cat"] == "books"){
+  $pageTitle = "Books";
+  $section = "books";
+}elseif($_GET["cat"] == "movies"){
+  $pageTitle = "Movies";
+    $section = "movies";
+}elseif($_GET["cat"] == "music"){
+  $pageTitle = "Music";
+    $section = "music";
+}
+}
+
+
+include("inc/header.php");?>
+
+<div class="section page">
+  <div class = "wrapper">
+    
+    <h1><?php echo $pageTitle; ?></h1>
+    <ul>
+      <?php foreach($catalog as $item){
+        echo "<li>$item</li>";
+        }
+      ?>
+    </ul>
+  </div>
+</div>
+
+<?php include("inc/footer.php");?>
