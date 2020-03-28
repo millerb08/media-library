@@ -9,12 +9,4 @@ try{
   exit;
 }
 
-try{
-  $results = $db->query("SELECT title, category FROM Media");
-}catch(Exception $e){
-  echo "Unable to retrieved results";
-  exit;
-}
-
-var_dump($results->fetchAll());
 ?>

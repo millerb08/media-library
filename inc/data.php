@@ -1,20 +1,22 @@
 <?php
-$catalog = [];
-$catalog[101] =[
-  "title" => "A Design Patterns: Elements of Reusable Object-Oriented Software",
-  "img" => "img/media/design_patterns.jpg",
-  "genre" => "Tech",
-  "format" => "PaperBack",
-  "year" =>1994,
-  "category" => "Books",
-  "isbn" => '978-0201633610',
-  "publisher" => "Prentice Hall",
-  "authors" => [
-    "Erich Gamma",
-    "Richard Helm",
-    "Ralph Johnson",
-    "John Vlissides"
-  ]
+include("connection.php");
+/*$catalog = [];
+//Books
+$catalog[101] = [
+	"title" => "A Design Patterns: Elements of Reusable Object-Oriented Software",
+	"img" => "img/media/design_patterns.jpg",
+    "genre" => "Tech",
+    "format" => "Paperback",
+    "year" => 1994,
+    "category" => "Books",
+    "authors" => [
+        "Erich Gamma",
+        "Richard Helm",
+        "Ralph Johnson",
+        "John Vlissides"
+    ],
+    "publisher" => "Prentice Hall",
+    "isbn" => '978-0201633610'
 ];
 $catalog[102] = [
     "title" => "Clean Code: A Handbook of Agile Software Craftsmanship",
@@ -140,7 +142,7 @@ $catalog[204] = [
         "Chris Sarandon",
         "Christopher Guest",
         "Wallace Shawn",
-        "AndrÃ© the Giant",
+        "André the Giant",
         "Fred Savage",
         "Peter Falk",
         "Billy Crystal"
@@ -182,4 +184,4 @@ $catalog[304] = [
     "year" => 2008,
     "category" => "Music",
     "artist" => "Nat King Cole"
-];
+];*/
